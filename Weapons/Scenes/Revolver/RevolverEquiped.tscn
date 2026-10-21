@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b43i34er86rg4"]
+
+[ext_resource type="Script" uid="uid://bcnqekiqrc6j2" path="res://Weapons/Scenes/Revolver/Revolver_Equipped.gd" id="1_8hgj5"]
+
+[node name="RevolverEquiped" type="Node3D" node_paths=PackedStringArray("fire_ray")]
+script = ExtResource("1_8hgj5")
+fire_ray = NodePath("RayCast3D")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+target_position = Vector3(0, -1, -50)
